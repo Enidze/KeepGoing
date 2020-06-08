@@ -1,0 +1,344 @@
+.personalPage {
+  width: 100%;
+
+  .background {
+    height: 100px;
+    width: 100%;
+    background-image: url("../img/personalPageBackground.jpg");
+  }
+
+  .outBox {
+    position: relative;
+    margin: 20px auto;
+    width: 1000px;
+    border: 1px solid #DDDDDD;
+    box-shadow: 0 0 5px #DDDDDD;
+    border-radius: 5px;
+    background-color: #ffffff;
+
+    .el-menu {
+      background-color: #FAFAFA;
+      min-height: 1000px;
+
+      .menuTitle, .menuTitle:hover {
+        cursor: default;
+        text-align: center;
+        color: #99A2BC;
+        border-bottom: 2px solid #E1E2E5;
+      }
+      .el-menu-item-group{
+        overflow: hidden;
+        background-color: #FAFAFA;
+      }
+    }
+
+    .right {
+      width: 830px;
+      position: absolute;
+      left: 167px;
+      top: 0;
+    }
+  }
+}
+
+// 上传头像el-upload的样式
+.image {
+  margin-left: 20px;
+  width: 84px;
+  height: 84px;
+  border: 2px solid #8c939d;
+  border-radius: 42px;
+  display: inline-block;
+
+  .el-upload {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .avatar-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 40px;
+  }
+}
+
+.perInfo, .perCollect {
+  margin: 0 30px;
+  border-bottom: 2px solid #F4F4F5;
+  position: relative;
+}
+
+// 主页中第一部分个人信息的样式
+.perInfo {
+  padding: 30px 0;
+
+  .el-image, .avatar {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 40px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 80px;
+    color: #8c939d;
+    border: 2px solid #8c939d;
+  }
+
+  .information {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    padding: 30px 30px;
+
+    .bold {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 50px;
+
+      span {
+        padding: 10px;
+      }
+
+      .boy {
+        color: #409EFF;
+      }
+
+      .girl {
+        color: #FF5555;
+      }
+    }
+
+    span {
+      padding-right: 10px;
+    }
+  }
+
+  .el-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 50px;
+  }
+}
+
+// 主页中各部分共有的样式
+.collectCourses, .collectArticles {
+  margin: 10px 20px 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F4F4F5;
+
+  .header {
+    line-height: 40px;
+    font-size: 20px;
+    position: relative;
+
+    i {
+      margin: 0 5px;
+      font-size: 40px;
+      color: #FF905A;
+    }
+
+    span {
+      position: absolute;
+      top: 2px;
+    }
+
+    .more {
+      font-size: 15px;
+      right: 20px;
+    }
+
+    .more:hover {
+      cursor: pointer;
+      color: #FF5555;
+    }
+  }
+}
+
+// 控件共有的头部样式
+.perInformation, .perCollectCourses, .perApplication, .perCollectArticles {
+  .header {
+    line-height: 54px;
+    padding: 0 20px;
+    border-bottom: 2px solid #F4F4F5;
+
+    span {
+      color: #AB6F88;
+      border-left: 3px solid #AB6F88;
+      padding: 0 10px;
+    }
+  }
+}
+
+// 各控件各自的内容样式
+.perInformation, .perApplication{
+  .el-input, .el-radio-group, .el-switch, span {
+    padding-left: 20px;
+  }
+
+  .el-form {
+    padding: 40px 0;
+    margin: 0 40px;
+    border-bottom: 2px solid #F4F4F5;
+  }
+
+  .el-button {
+    display: block;
+    margin: 40px auto 0;
+  }
+}
+
+.perCollectCourses, .perCollectArticles {
+  .batchCancel {
+    height: 80px;
+    margin: 0 20px;
+    padding: 10px 0;
+    position: relative;
+
+    .btnBatchCancel, .btnBack {
+      position: absolute;
+      right: 0;
+    }
+
+    .el-checkbox, span, .btnCancel, .btnBatchCancel, .btnBack {
+      margin: 10px 0;
+    }
+
+    span {
+      padding: 0 20px;
+    }
+  }
+}
+
+.perApplication{
+  .noApply{
+    margin: 0 20px;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 170px;
+    font-size: 30px;
+    color: #d9d9d9;
+  }
+  .el-button{
+    margin: 20px auto;
+    display: block;
+  }
+  .card{
+    margin: 50px auto;
+    width: 85*3px;
+    height: 55*3px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 3px #333333;
+    .el-image{
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+    }
+    .info{
+      padding: 10px;
+      position: absolute;
+      z-index: 1;
+      span{
+        font-weight: bold;
+        line-height: 30px;
+        color: #5e5e5e;
+        font-size: 15px;
+        display: block;
+      }
+    }
+  }
+  .tipBox{
+    margin: 0 20px;
+    border-top: 2px solid #F4F4F5;
+    .tip{
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #F9833F;
+      width: 500px;
+      span{
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+.collectCourses, .collectArticles, .perCollectCourses, .perCollectArticles {
+  .el-row {
+    margin: 0 auto;
+    width: 660px;
+
+    .el-col {
+      margin: 10px;
+      width: 200px;
+      height: 150px;
+      border: 1px solid #cccccc;
+      box-shadow: 0 0 3px #cccccc;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+
+      .el-checkbox {
+        width: 200px;
+        height: 150px;
+        position: absolute;
+        z-index: 2;
+      }
+
+      img {
+        width: 200px;
+        height: 100px;
+        object-fit: cover;
+      }
+
+      span {
+        white-space: nowrap; // 不换行
+        text-overflow: ellipsis; // 溢出省略号
+        width: 160px;
+        height: 40px;
+        overflow: hidden;
+        display: block;
+        padding: 10px;
+      }
+
+      .el-dropdown {
+        //display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: 10px 5px;
+
+        .el-icon-more {
+          transform: rotate(90deg);
+          color: #FF5555;
+        }
+      }
+    }
+
+    .el-col:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  .noCollect {
+    display: block;
+    text-align: center;
+    line-height: 170px;
+    font-size: 30px;
+    color: #d9d9d9;
+  }
+}

@@ -1,0 +1,216 @@
+.home {
+  position: relative;
+
+  .sliverBg {
+    width: 100%;
+    height: 600px;
+    background-color: #000000;
+    margin-bottom: 30px;
+
+    .sliver {
+      width: 1200px;
+      height: 100%;
+      position: relative;
+      margin: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.inter {
+  width: 1200px;
+  margin: auto;
+
+  .el-col {
+    width: 400px;
+    height: 600px;
+    .title {
+      width: 400px;
+      font-size: 15px;
+      color: #5e5e5e;
+      position: relative;
+      margin: 10px auto;
+      border-left: 5px solid #FF5555;
+      padding: 0 20px;
+
+      a {
+        float: right;
+        color: #5e5e5e;
+      }
+    }
+    .article, .course, .sort, .title {
+      width: 400px;
+      a:hover {
+        opacity: 0.8;
+        cursor: pointer;
+        text-decoration: none;
+        color: #FF5555;
+
+        span {
+          color: #FF5555;
+        }
+      }
+    }
+  }
+
+  .article {
+    a {
+      border: 1px solid #DDDDDD;
+      width: 390px;
+      height: 105px;
+      display: block;
+      position: relative;
+      color: #333333;
+      padding: 12px;
+
+      span {
+        font-weight: normal;
+        font-size: 15px;
+        position: absolute;
+        padding: 10px 20px;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      img {
+        height: 75px;
+        width: 125px;
+        object-fit: cover;
+      }
+
+      p {
+        font-size: 12px;
+        width: 255px;
+        line-height: 40px;
+        overflow: hidden;
+        display: inline-block;
+        position: absolute;
+        top: 75/2px;
+        padding: 0 20px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .courses {
+    .course {
+      a {
+        display: inline-block;
+        width: 400/2-10px;
+        height: 535/4-10px;
+        margin: 0 10px 5px 0;
+        position: relative;
+
+        span {
+          margin: 10px;
+          color: #DDDDDD;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .sorts {
+    .sort {
+      display: inline-block;
+      border: 1px solid #EEEEEE;
+
+      a {
+        padding: 10px;
+        border: 0.5px solid #EEEEEE;
+        background-color: #ffffff;
+        display: inline-block;
+        width: (400-2)/3px;
+        height: 525/4px;
+        text-align: center;
+
+        span {
+          margin: 10px 0;
+          height: 20px;
+          line-height: 20px;
+          font-size: 8px;
+          color: #8492a6;
+        }
+
+        img {
+          width: 70px;
+          height: 70px;
+          object-fit: cover;
+          display: block;
+          margin: 10px auto;
+        }
+      }
+    }
+  }
+
+  .coaches {
+    .title {
+      width: 390px;
+      font-size: 15px;
+      color: #5e5e5e;
+      margin: 10px auto;
+      border-left: 5px solid #FF5555;
+      padding: 0 20px;
+    }
+    .coach {
+      width: 390px;
+      height: 130px;
+      position: relative;
+      margin: 20px auto;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 5px #888;
+
+      img {
+        width: 100px;
+        height:130px;
+        background-color: #444444;
+        object-fit: cover;
+        position: absolute;
+        overflow: hidden;
+      }
+
+      .infoBackground{
+        position: absolute;
+        left: 100px;
+        width: 290px;
+        height: 130px;
+        background-image: url("../img/home1.jpg");
+        background-size: 100%;
+        opacity: 0.3;
+        background-color: #ffffff;
+      }
+      .info {
+        font-weight: bold;
+        left: 100px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        line-height: 30px;
+        font-size: 14px;
+        padding: 20px;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,208 @@
+.search{
+  width: 100%;
+  height: 400px;
+  background-color: #5e5e5e;
+  background-image: url(../img/饮食查询search背景图.jpg);
+  position: relative;
+
+  .searchInputBox{
+    width: 600px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    .el-icon-search{
+      position: absolute;
+      line-height: 40px;
+      font-size: 25px;
+      color: #8492a6;
+      right: 10px;
+    }
+  }
+}
+
+.meal{
+  .box{
+    width: 1000px;
+    margin: 20px auto;
+    .title{
+      width: 600px;
+      font-size: 20px;
+      color: #5e5e5e;
+      position: relative;
+      margin: 10px auto;
+      border-left: 5px solid #FF5555;
+      padding: 0 20px;
+    }
+    li{
+      display: inline-block;
+      width: 150px;
+      height: 140px;
+      text-align: center;
+      span{
+        margin: 10px 0;
+        height: 20px;
+        line-height: 20px;
+        font-size: 10px;
+        color: #8492a6;
+      }
+      img{
+        background-color: #ffffff;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        display: block;
+        margin: 0 25px;
+        box-shadow: 0 0 5px #aaaaaa;
+      }
+    }
+
+    li:hover{
+      cursor: pointer;
+      opacity: 0.8;
+    }
+
+    .foodSort{
+      display: inline-block;
+      width: 600px;
+      margin: 20px;
+      .sortList{
+        display: inline-block;
+        ul{
+          width: 150*4px;
+        }
+      }
+    }
+
+    .restSort{
+      display: inline-block;
+      width: 300px;
+      margin: 20px;
+      .sortList{
+        display: inline-block;
+        ul{
+          width: 150*2px;
+        }
+      }
+    }
+  }
+}
+
+
+.foods{
+  .list {
+    width: 600+448+20px;
+    margin: 20px auto;
+    position: relative;
+
+    .paging {
+      width: 600px;
+    }
+
+    ul {
+      width: 600px;
+      border: 1px solid #DDDDDD;
+      color: #555555;
+      min-height: (50+15*2)*8px;
+
+      .tit {
+        padding: 10px;
+        color: #333333;
+        font-weight: bold;
+      }
+
+      li {
+        border-bottom: 1px solid #DDDDDD;
+        width: 600px;
+        padding: 15px;
+        position: relative;
+
+        img {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          object-fit: cover;
+        }
+
+        .text {
+          height: 50px;
+          position: absolute;
+          top: 15px;
+          left: 80px;
+
+          .name {
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+
+          .cost {
+            font-size: 13px;
+            color: #aaaaaa;
+          }
+        }
+      }
+    }
+  }
+}
+
+.foods{
+  .sorts {
+    //border: 1px solid black;
+    width: (100+5*2)*4px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    .title{
+      border-left: 2px solid #FF5555;
+      padding: 0 10px;
+      margin: 5px;
+    }
+    .sort {
+      display: inline-block;
+      a {
+        margin: 5px;
+        padding: 10px;
+        border: 0.5px solid #EEEEEE;
+        background-color: #ffffff;
+        display: inline-block;
+        //width: (400-2*3-5*2*3)/3px;
+        width: 98px;
+        height: 98px;
+        text-align: center;
+
+        span {
+          text-align: center;
+          display: block;
+          width: 98-10*2px;
+          line-height: 12px;
+          font-size: 12px;
+          color: #8492a6;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          word-break: break-all;
+        }
+
+        img {
+          width: 65px;
+          height: 55px;
+          object-fit: cover;
+          display: block;
+          margin: 10px auto 5px;
+        }
+      }
+      a:hover{
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 0.8;
+        box-shadow: 0 0 5px #EEEEEE;
+      }
+    }
+  }
+}
